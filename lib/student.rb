@@ -26,15 +26,15 @@ class Student
   def self.find_by_name(name)
     # find the student in the database given a name
     # return a new instance of the Student class
-    # row = DB[:connection].execute("select * from students where id =", self.name)
-    # sql = <<-SQL
-    #  SELECT * FROM students WHERE name = ?
-    # SQL
+    sql = <<-SQL
+      SELECT * FROM carts WHERE id = ?
+    SQL
 
-    # DB[:conn].execute(sql, name)
-    sql = "SELECT * from students where name = #{name}"
+    rows = DB[:connection].execute(sql, id)
+    
+    #sql = "SELECT * from students where name = #{name}"
 
-    DB[:conn].execute(sql)
+    #DB[:conn].execute(sql)
   end
 
   def self.all_students_in_grade_9
