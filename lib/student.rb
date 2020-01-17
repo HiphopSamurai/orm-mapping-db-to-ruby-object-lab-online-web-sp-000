@@ -50,7 +50,7 @@ class Student
 
   def self.all_students_in_grade_X(grade)
     #yes argument
-    ###
+    #This method should return an array of all students for grade X
   end
 
   def save
