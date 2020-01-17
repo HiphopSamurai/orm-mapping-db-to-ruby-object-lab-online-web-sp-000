@@ -47,6 +47,8 @@ class Student
   def self.students_below_12th_grade
     #no argument
     #return an array of all the students below 12th grade
+    sql = "SELECT * from students where grade < 12"
+    DB[:conn].execute(sql)
   end
 
   def self.first_X_students_in_grade_10(number)
