@@ -54,6 +54,8 @@ class Student
   def self.first_X_students_in_grade_10(number)
     #yes argument
     #This method should return an array of exactly X number of students
+    sql = "SELECT * from students where grade = 10"
+    DB[:conn].execute(sql.first)
   end
 
   def self.first_student_in_grade_10
