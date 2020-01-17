@@ -33,11 +33,6 @@ class Student
     DB[:conn].execute(sql, name).map do |row|
       self.new_from_db(row)
     end.first
-    #DB[:conn].execute(sql)
-
-    #sql = "SELECT * from students where name = #{name}"
-
-    #DB[:conn].execute(sql)
   end
 
   def self.all_students_in_grade_9
