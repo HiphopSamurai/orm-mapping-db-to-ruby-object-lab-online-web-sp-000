@@ -27,7 +27,7 @@ class Student
     # find the student in the database given a name
     # return a new instance of the Student class
     # row = DB[:connection].execute("select * from students where id =", self.name)
-    SQL = <<-SQL
+    sql = <<-SQL
       SELECT * FROM students WHERE name = ?
     SQL
 
