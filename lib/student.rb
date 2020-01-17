@@ -27,11 +27,12 @@ class Student
     # find the student in the database given a name
     # return a new instance of the Student class
     # row = DB[:connection].execute("select * from students where id =", self.name)
-    sql = <<-SQL
-      SELECT * FROM students WHERE name = ?
-    SQL
+    # sql = <<-SQL
+    #  SELECT * FROM students WHERE name = ?
+    # SQL
 
-    DB[:conn].execute(sql, name)
+    # DB[:conn].execute(sql, name)
+    sql = "SELECT * from students where name = #{name}"
   end
 
   def self.all_students_in_grade_9
