@@ -38,16 +38,18 @@ class Student
     #return an array of all the students below 12th grade
   end
 
-  def self.first_X_students_in_grade_10()
+  def self.first_X_students_in_grade_10(number)
     #yes argument
     #This method should return an array of exactly X number of students
   end
 
   def self.first_student_in_grade_10
-    ###
+    #no argument
+    #This should return the first student that is in grade 10.
   end
 
-  def self.all_students_in_grade_X
+  def self.all_students_in_grade_X(grade)
+    #yes argument
     ###
   end
 
