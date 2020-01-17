@@ -28,7 +28,7 @@ class Student
     # return a new instance of the Student class
     # row = DB[:connection].execute("select * from students where id =", self.name)
     sql = <<-SQL
-      SELECT * FROM students WHERE name = ?
+      SELECT * FROM students WHERE name = ?, name
     SQL
 
     row = DB[:conn].execute(sql)
