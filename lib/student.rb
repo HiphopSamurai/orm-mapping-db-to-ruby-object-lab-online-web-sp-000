@@ -30,7 +30,7 @@ class Student
       SELECT * FROM students WHERE name = ?
     SQL
 
-    DB[:connection].execute(sql, name)
+    DB[:conn].execute(sql, name)
     #DB[:conn].execute(sql)
 
     #sql = "SELECT * from students where name = #{name}"
