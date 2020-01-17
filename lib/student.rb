@@ -36,7 +36,7 @@ class Student
     #sql = "SELECT * from students where name = #{name}"
 
     #DB[:conn].execute(sql)
-  #end
+  end
 
   def self.all_students_in_grade_9
     #no argument
