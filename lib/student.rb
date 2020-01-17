@@ -31,7 +31,7 @@ class Student
     SQL
 
     rows = DB[:connection].execute(sql, id)
-    
+
     #sql = "SELECT * from students where name = #{name}"
 
     #DB[:conn].execute(sql)
