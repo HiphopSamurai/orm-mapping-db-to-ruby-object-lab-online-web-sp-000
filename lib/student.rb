@@ -61,7 +61,8 @@ class Student
   def self.first_student_in_grade_10
     #no argument
     #This should return the first student that is in grade 10.
-    sql = "SELECT * from students where grade = 10"
+    sql = []
+    sql << "SELECT * from students where grade = 10"
     sql = sql.first
     DB[:conn].execute(sql)
   end
