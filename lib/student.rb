@@ -62,7 +62,7 @@ class Student
     #no argument
     #This should return the first student that is in grade 10.
     sql = "SELECT * from students where grade = 10".first
-    sql = sql.first
+    #sql = sql.first
     DB[:conn].execute(sql)
   end
 
